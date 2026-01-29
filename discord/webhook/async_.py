@@ -1,4 +1,15 @@
 """
+> if the main logic is not a separate helper function
+Actually seems that not really, the `handle_message_parameters` referenced inside is already a stateless helper function if I understand correctly.
+
+> Bypassing the 25 component limit isn't doing anyone any favours here so I don't know why you're bringing it up.
+Well, actually not that much, just to say most restrictions done to View instance aren't doing me any favours either. It is to me unneeded as long as I am conscious that the view is valid at the moment it is actually sent, just like this follow-up dispatchable view case.
+
+That's basically all. I think this PR has worth the course knowing what is and isn't within the maintenance / design scope, despite that the name `discord.py` may mistakenly imply a wrapper of complete set of discord API initially. Thanks, and good luck.
+"""
+
+
+"""
 The MIT License (MIT)
 
 Copyright (c) 2015-present Rapptz
